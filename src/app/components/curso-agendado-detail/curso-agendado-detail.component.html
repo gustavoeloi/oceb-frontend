@@ -1,0 +1,22 @@
+<div class="dialog-curso">
+  <div mat-dialog-title>
+    <img src="{{data.curso.img}}" alt="Imagem do Local do Curso">
+    <h1>{{data.curso.title}} - {{data.curso.uf}}</h1>
+  </div>
+
+  <div mat-dialog-content>
+    <ul>
+      <li><span class="list-info">Data: </span>{{data.curso.data}}</li>
+      <li><span class="list-info">Local: </span>{{data.curso.local}}</li>
+      <li><span class="list-info">Telefone: </span>{{data.curso.telefone}}</li>
+      <li><span class="list-info">Responsável: </span>{{data.curso.responsavel}}</li>
+      <li><span class="list-info">Valor: </span>{{data.curso.valor | currency: 'BRL' }}</li>
+      <li><span class="list-info">Documentos necessários: </span>{{data.curso.documentos}}</li>
+    </ul>
+  </div>
+
+  <div mat-dialog-actions class="dialog-actions">
+    <button mat-dialog-close mat-raised-button color="accent">Fechar</button>
+    <button mat-dialog-close mat-raised-button color="primary">Fazer inscrição</button>
+  </div>
+</div>

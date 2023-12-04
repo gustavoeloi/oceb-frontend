@@ -1,0 +1,15 @@
+<header class="header">
+  <nav class="nav container" [ngClass]="{'active': isNavActive}">
+    <a href="/" class="logo">
+      <img src="../../../assets/images/oceb-logo.png" alt="Logo OCEB">
+    </a>
+    <button class="hamburger" (click)="toggleNav()"></button>
+    <ul class=" nav-list">
+      <li><a href="#" routerLinkActive="active" routerLink="/home">Home</a></li>
+      <li><a href="#" routerLinkActive="active">Sobre</a></li>
+      <li><a href="#" routerLinkActive="active">Capelenia</a></li>
+      <li><a href="#" routerLinkActive="active">Contato</a></li>
+      <li><a href="#" routerLinkActive="active" class="cta-agendar">Agendar Curso</a></li>
+    </ul>
+  </nav>
+</header>

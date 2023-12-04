@@ -1,0 +1,272 @@
+.introducao {
+  width: 100%;
+  background-image: url(../../../assets/images/introducao-home.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 18.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .introducao-titulo {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 28px;
+    }
+  }
+
+  .introducao-p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #ecedee;
+    font-style: italic;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 14rem;
+  }
+
+}
+
+// Nossas capelanias
+
+.nossas-capelanias {
+  padding: 48px 0;
+  .titulo {
+    text-align: center;
+    color: #B30000;
+  }
+
+  .container-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .card-capelania {
+    max-width: 300px;
+    max-height: 350px;
+    margin: 16px auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .card-capelania h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-capelania p {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container-cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+
+
+  .hospitalar {
+    background-image: url('../../../assets/images/card-hospitalar.png');
+  }
+
+  .prisional {
+    background-image: url('../../../assets/images/card-prisional.png');
+  }
+
+  .escolar {
+    background-image: url('../../../assets/images/card-escolar.png');
+  }
+}
+
+// Estilos para a seção de cursos agendados
+.curso-agendados {
+  margin-bottom: 48px;
+
+  // Estilos para o container de cards
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // Torna responsivo
+    gap: 16px;
+  }
+
+  // Estilos para cada card de curso
+  .card-curso {
+    max-width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    padding: 16px;
+
+    // Estilos para o título do card
+    .card-info-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #16192C;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #16192C;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #16192C;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    // Estilos para as ações do card
+    .card-curso-actions {
+      button {
+        max-width: 150px;
+        padding: 8px;
+        border: none;
+        border-radius: 8px;
+        background-color: #B30000;
+        color: #fff;
+        font-size: 0.875rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: #D90000;
+        }
+      }
+    }
+  }
+}
+
+.section-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 16px;
+  gap: 16px;
+  flex-direction: column;
+
+  .about-text {
+    max-width: 100%;
+    text-align: center;
+
+    h2 {
+      color: #000;
+      margin-bottom: 16px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: #3c3c43;
+      text-align: justify;
+    }
+
+    .quote {
+      font-style: italic;
+      margin-top: 12px;
+    }
+  }
+
+  .about-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+      margin-top: 12px;
+      line-height: 1;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 32px;
+
+    .about-text {
+      max-width: 50%;
+      text-align: left;
+    }
+
+    .about-logo {
+      max-width: 150px;
+      text-align: center;
+
+      h3 {
+        font-size: 24px;
+        margin-top: 16px;
+      }
+
+    }
+  }
+}
+

@@ -1,0 +1,59 @@
+<section class="introducao">
+  <h1 class="introducao-titulo">Ordem dos Capelães <br>Evangélicos do Brasil</h1>
+  <p class="introducao-p">Porque Sabemos o valor de uma alma</p>
+  <button class="btn-red">Agendar</button>
+</section>
+
+<main>
+  <section class="nossas-capelanias container">
+    <h2 class="titulo">Conheça Nossas Capelanias</h2>
+    <div class="container-cards">
+      <div class="card-capelania {{capelania.id}}" *ngFor="let capelania of capelanias">
+        <h3>{{capelania.title}}</h3>
+        <p>{{capelania.description}}</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="container">
+    <div class="curso-agendados">
+      <h2>Cursos Agendados</h2>
+      <div class="card-container">
+        <div class="card-curso" *ngFor="let curso of cardData">
+          <img src="{{curso.img}}" alt="Imagem" class="card-imagem">
+          <div class="card-curso-info">
+            <div class="card-info-title">
+              <h3>{{curso.title}} - {{curso.uf}}</h3>
+              <p>{{curso.data}}</p>
+            </div>
+            <p><span>Local:</span> {{curso.local}}</p>
+            <p><span>Telefone:</span> {{curso.telefone}}</p>
+            <p><span>Documentos:</span> {{ curso.documentos }}</p>
+            <div class="card-curso-actions">
+              <button (click)="openDialog(curso)">Mais Informações</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section class="container">
+    <div class="section-about">
+      <div class="about-text">
+        <h2>Sobre a OCEB</h2>
+        <p>A OCEB-Ordem dos Capelães Evangélicos do Brasil, tem por finalidade: Promover e programar cursos, encontros,
+          seminários, conferencias, preparação e capacitação de Capelania Evangélica Hospitalar, Prisional, Familiar,
+          Fúnebre é áreas afins para ministros evangélicos, obreiros e voluntários leigos de diversas denominações,
+          objetivando através do curso, o intercâmbio, a amizade e o companheirismo no corpo de Cristo</p>
+        <p class="quote">“Assim resplandeça a vossa luz diante dos homens, para que vejam as vossas boas obras e
+          glorifiquem ao Vosso
+          Pai, que esta nos céus” - Matheus 5:16</p>
+      </div>
+      <div class="about-logo">
+        <img src="../../../assets/images/oceb-logo.png" alt="Logo OCEB">
+        <h3>Ordem dos Capelães Evangélicos do Brasil</h3>
+      </div>
+    </div>
+  </section>
+</main>
