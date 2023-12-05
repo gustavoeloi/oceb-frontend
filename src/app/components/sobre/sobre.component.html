@@ -1,0 +1,51 @@
+<section class="sobre">
+  <h1>Sobre</h1>
+  <p>Conheça a OCEB</p>
+</section>
+
+<main>
+  <section class="about-oceb container">
+    <h2>Prazer, somos a OCEB</h2>
+    <div class="resumo-oceb">
+      <img src="../../../assets/images/oceb-logo.png" alt="Logo da OCEB">
+      <p>A OCEB-Ordem dos Capelães Evangélicos do Brasil, tem por finalidade: Promover e programar cursos, encontros,
+        seminários, conferencias, preparação e capacitação de Capelania Evangélica Hospitalar, Prisional, Familiar,
+        Fúnebre é áreas afins para ministros evangélicos, obreiros e voluntários leigos de diversas denominações,
+        objetivando através do curso, o intercâmbio, a amizade e o companheirismo no corpo de Cristo</p>
+    </div>
+    <p class="quote-versiculo">
+      “Assim resplandeça a vossa luz diante dos homens, para que vejam as vossas boas obras e glorifiquem ao Vosso Pai,
+      que esta nos céus” <span>- Matheus 5:16</span>
+    </p>
+  </section>
+  <hr>
+  <section class="container diretoria-oceb">
+    <h2>Diretoria da OCEB</h2>
+    <p class="conheca-sobre">Conheça a nossa diretoria</p>
+    <div class="diretoria-container">
+      <div class="card-membro" *ngFor="let membro of membrosDiretoria">
+        <img src="{{membro.img}}" alt="Membro da diretoria">
+        <div class="card-content">
+          <h4>{{membro.nome}}</h4>
+          <p class="funcao">{{membro.funcao}}</p>
+          <p>{{membro.descricao}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container mvv">
+      <div class="mvv-card" *ngFor="let info of mvv">
+        <img src="{{info.icon}}" alt="{{info.title}}">
+        <h3>{{info.title}}</h3>
+        <p>{{info.content}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-agendar-curso">
+    <h3>Agende seu curso</h3>
+    <p>Agende agora mesmo o curso de capacitação da OCEB em sua igreja</p>
+    <button class="btn-red">Agendar</button>
+  </section>
+</main>

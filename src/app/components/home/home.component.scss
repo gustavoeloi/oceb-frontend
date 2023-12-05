@@ -45,16 +45,15 @@
   @media (max-width: 768px) {
     height: 14rem;
   }
-
 }
 
 // Nossas capelanias
 
 .nossas-capelanias {
-  padding: 48px 0;
+  padding: 32px 16px;
   .titulo {
     text-align: center;
-    color: #B30000;
+    color: #b30000;
   }
 
   .container-cards {
@@ -64,8 +63,8 @@
   }
 
   .card-capelania {
-    max-width: 300px;
-    max-height: 350px;
+    max-width: 400px;
+    max-height: 300px;
     margin: 16px auto;
     padding: 1rem;
     display: flex;
@@ -105,30 +104,30 @@
     }
   }
 
-
-
-
   .hospitalar {
-    background-image: url('../../../assets/images/card-hospitalar.png');
+    background-image: url("../../../assets/images/card-hospitalar.png");
   }
 
   .prisional {
-    background-image: url('../../../assets/images/card-prisional.png');
+    background-image: url("../../../assets/images/card-prisional.png");
   }
 
   .escolar {
-    background-image: url('../../../assets/images/card-escolar.png');
+    background-image: url("../../../assets/images/card-escolar.png");
   }
 }
 
 // Estilos para a seção de cursos agendados
 .curso-agendados {
-  margin-bottom: 48px;
+  margin: 48px 0;
 
   // Estilos para o container de cards
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // Torna responsivo
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    ); // Torna responsivo
     gap: 16px;
   }
 
@@ -150,7 +149,7 @@
       p {
         font-size: 1rem;
         font-weight: bold;
-        color: #16192C;
+        color: #16192c;
       }
     }
 
@@ -164,12 +163,12 @@
     h3 {
       font-size: 1rem;
       font-weight: bold;
-      color: #16192C;
+      color: #16192c;
       margin-bottom: 0.5rem;
     }
 
     p {
-      color: #16192C;
+      color: #16192c;
       span {
         font-weight: bold;
       }
@@ -182,14 +181,14 @@
         padding: 8px;
         border: none;
         border-radius: 8px;
-        background-color: #B30000;
+        background-color: #b30000;
         color: #fff;
         font-size: 0.875rem;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          background-color: #D90000;
+          background-color: #d90000;
         }
       }
     }
@@ -265,8 +264,6 @@
         font-size: 24px;
         margin-top: 16px;
       }
-
     }
   }
 }
-

@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CursoAgendadoDetailComponent } from './components/curso-agendado-detail/curso-agendado-detail.component';
+import { SobreComponent } from './components/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CursoAgendadoDetailComponent } from './components/curso-agendado-detail
     HomeComponent,
     FooterComponent,
     CursoAgendadoDetailComponent,
+    SobreComponent,
   ],
   imports: [
     BrowserModule,
