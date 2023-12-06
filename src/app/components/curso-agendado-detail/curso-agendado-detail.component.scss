@@ -1,8 +1,17 @@
 .dialog-curso {
   padding: 1rem 0;
+  background: #fff;
 
   ul {
     list-style: none;
+
+    li {
+      color: #425466;
+
+      .list-info {
+        font-weight: 600;
+      }
+    }
   }
 
   img {
@@ -13,12 +22,8 @@
   }
 
   h1 {
-    color: #fff;
+    color: #000;
     text-align: center;
-  }
-
-  .list-info {
-    font-weight: 700;
   }
 
   .dialog-actions {
