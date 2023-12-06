@@ -1,0 +1,24 @@
+<section class="introducao background">
+  <h1 class="introducao-titulo">Capelanias</h1>
+  <p class="introducao-p">Conheça nossas capelanias</p>
+</section>
+
+<main>
+  <section class="container conheca-capelanias">
+    <h2>Conheça nossas capelanias</h2>
+    <div class="card-nossas-capelanias" *ngFor="let capelania of nossasCapelanias">
+      <img src="{{capelania.img}}" alt="{{capelania.capelania}}">
+      <div class="card-content">
+        <h3>{{capelania.capelania}}</h3>
+        <p>{{capelania.texto}}</p>
+      </div>
+    </div>
+    <button class="btn-red">Agendar</button>
+  </section>
+  <hr>
+  <section class="galery-image container">
+    <div class="galery" *ngFor="let photos of imagesGalery">
+      <img src="{{photos.img}}" alt="{{photos.alt}}">
+    </div>
+  </section>
+</main>

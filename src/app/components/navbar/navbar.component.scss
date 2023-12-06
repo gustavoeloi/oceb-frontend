@@ -1,5 +1,5 @@
 .header {
-  background-color: #D90000;
+  background-color: #313a42;
   padding-inline: 16px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -49,7 +49,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: #B30000;
+        background-color: #b30000;
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
         display: flex;
@@ -132,7 +132,7 @@
       }
 
       .cta-agendar {
-        background: #B30000;
+        background: #b30000;
         border-radius: 8px;
       }
     }
