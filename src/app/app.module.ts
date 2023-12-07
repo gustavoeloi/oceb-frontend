@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CursoAgendadoDetailComponent } from './components/curso-agendado-detail/curso-agendado-detail.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { CapelaniasComponent } from './components/capelanias/capelanias.component';
+import { AgendamentoComponent } from './components/agendamento/agendamento.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CapelaniasComponent } from './components/capelanias/capelanias.componen
     CursoAgendadoDetailComponent,
     SobreComponent,
     CapelaniasComponent,
+    AgendamentoComponent,
   ],
   imports: [
     BrowserModule,
